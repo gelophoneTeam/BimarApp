@@ -21,7 +21,8 @@
         </activity>
         <activity android:name=".History" />
         <activity android:name=".AboutUs" />
-        <activity android:name=".Check"></activity>
+        <activity android:name=".Check" />
+        <activity android:name=".Peyk"></activity>
     </application>
 
 </manifest>
