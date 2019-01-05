@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoskhDaram"
+    android:background="@drawable/bcn"
+    >
+
+
+    <ImageView
+        android:id="@+id/noskh"
+        android:layout_width="374dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/noskh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
+
+
+    <Button
+
+
+        android:id="@+id/btnn1"
+        android:layout_width="165dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.595"
+        android:textColor="#fff"
+        android:elevation="50dp"
+        android:textSize="20dp"
+        android:text="بارگزاری نسخه"
+        />
+
+
+    <!-- YOUR CONTENT -->
+
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="102dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728"
+        app:roundRect_bottomLeftDiameter="40dp"
+        app:roundRect_bottomRightDiameter="40dp"
+        app:roundRect_topLeftDiameter="40dp"
+        app:roundRect_topRightDiameter="40dp">
+
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="91dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/buw"
+            android:entries="@array/android_dropdown_array"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textDirection="rtl"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.896"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.722" />
+
+
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="33dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ic_expand_more_black_24dp" />
+
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="102dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728"
+        app:roundRect_bottomLeftDiameter="40dp"
+        app:roundRect_bottomRightDiameter="40dp"
+        app:roundRect_topLeftDiameter="40dp"
+        app:roundRect_topRightDiameter="40dp">
+
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="91dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buw"
+            android:entries="@array/android_dropdown_arrays"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textDirection="rtl"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.099"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.722" />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="33dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ic_expand_more_black_24dp" />
+
+
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+    <TextView
+        android:id="@+id/txtn"
+        android:layout_width="374dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/txtb"
+        android:layoutDirection="rtl"
+        android:padding="6dp"
+        android:text="کاربر گرامی لطفا در صورت نیاز به نوع خاصی از برند دارو حتما اسم تجاری و شرکت دارو مورد نظر را قید کنید."
+        android:textAlignment="center"
+        android:textColor="#b3adad"
+        android:textDirection="inherit"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.915" />
+
+
+</android.support.constraint.ConstraintLayout>

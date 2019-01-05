@@ -2,4 +2,18 @@
     <string name="app_name">BimarApp</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="android_dropdown_arrays">
+        <item>شهر/استان</item>
+        <item>قزوین</item>
+
+    </string-array>
+
+    <string-array name="android_dropdown_array">
+        <item>دسته بندی</item>
+        <item>دارویی</item>
+        <item>بهداشتی</item>
+        <item>آرایشی</item>
+
+    </string-array>
 </resources>

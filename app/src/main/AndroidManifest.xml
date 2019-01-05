@@ -22,7 +22,8 @@
         <activity android:name=".History" />
         <activity android:name=".AboutUs" />
         <activity android:name=".Check" />
-        <activity android:name=".Peyk"></activity>
+        <activity android:name=".Peyk" />
+        <activity android:name=".NoskhDaram"></activity>
     </application>
 
 </manifest>
