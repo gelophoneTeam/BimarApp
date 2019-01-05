@@ -32,4 +32,8 @@ dependencies {
 
     //Indicator
     implementation 'com.steelkiwi:indicator-view:1.0.0'
+
+    //history
+    implementation 'com.github.florent37:shapeofview:1.0.4'
+    implementation 'com.github.channguyen:rsv:1.0.1'
 }
