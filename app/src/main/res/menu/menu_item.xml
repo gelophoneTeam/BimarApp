@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/checklist"
+        android:title="پیگیری سفارش" />
+    <item
+        android:icon="@drawable/ic_build_black_24dp"
+        android:title="ارتباط با پشتیبانی" />
+    <item
+        android:icon="@drawable/information"
+        android:title="درباره ما" />
+    <item
+        android:icon="@drawable/logout"
+        android:title="خروج" />
+</menu>
