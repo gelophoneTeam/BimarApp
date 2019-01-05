@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.malizen.bimarapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,7 +27,8 @@
         <activity android:name=".Check" />
         <activity android:name=".Peyk" />
         <activity android:name=".NoskhDaram" />
-        <activity android:name=".Wallet"></activity>
+        <activity android:name=".Wallet" />
+        <activity android:name=".CedarMap"></activity>
     </application>
 
 </manifest>

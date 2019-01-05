@@ -40,4 +40,8 @@ dependencies {
     //waiting
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
 
+    //map
+    implementation 'com.cedarmaps:CedarMapsSDK:3.2.0'
+
+
 }
