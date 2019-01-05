@@ -37,7 +37,7 @@ public class LogIn extends AppCompatActivity {
         imgLog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                startActivity(new Intent(LogIn.this, SignUp.class));
+                startActivity(new Intent(LogIn.this, SignUp.class));
                 overridePendingTransition(R.anim.animation1, R.anim.animation2);
             }
         });
