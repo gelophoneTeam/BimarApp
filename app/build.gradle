@@ -36,4 +36,8 @@ dependencies {
     //history
     implementation 'com.github.florent37:shapeofview:1.0.4'
     implementation 'com.github.channguyen:rsv:1.0.1'
+
+    //waiting
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
+
 }

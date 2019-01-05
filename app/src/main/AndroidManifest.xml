@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".History" />
-        <activity android:name=".AboutUs"></activity>
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Check"></activity>
     </application>
 
 </manifest>
