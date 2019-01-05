@@ -16,4 +16,15 @@
         <item>آرایشی</item>
 
     </string-array>
+
+
+    <string-array name="price">
+        <item>انتخاب کنید</item>
+        <item>1000 تومان</item>
+        <item>2000 تومان</item>
+        <item>5000 تومان</item>
+        <item>10000 تومان</item>
+
+
+    </string-array>
 </resources>

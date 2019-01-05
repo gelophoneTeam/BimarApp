@@ -23,7 +23,8 @@
         <activity android:name=".AboutUs" />
         <activity android:name=".Check" />
         <activity android:name=".Peyk" />
-        <activity android:name=".NoskhDaram"></activity>
+        <activity android:name=".NoskhDaram" />
+        <activity android:name=".Wallet"></activity>
     </application>
 
 </manifest>
