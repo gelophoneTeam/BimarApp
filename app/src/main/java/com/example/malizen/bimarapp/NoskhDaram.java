@@ -1,11 +1,16 @@
 package com.example.malizen.bimarapp;
 
 import android.app.Dialog;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.provider.MediaStore;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,6 +18,7 @@ import android.widget.Toast;
 public class NoskhDaram extends AppCompatActivity {
 
     Button button;
+    ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,49 +35,73 @@ public class NoskhDaram extends AppCompatActivity {
         spinner2.setAdapter(adapter2);
 
 
+        button = (Button)findViewById(R.id.btnn1);
+        imageView =(ImageView)findViewById(R.id.noskh);
 
-        button = (Button) findViewById(R.id.btnn1);
+
+
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-
-                final Dialog dialog = new Dialog(NoskhDaram.this);
-
-                dialog.setContentView(R.layout.custom);
-                dialog.getWindow().setLayout(1000,1300);
-                dialog.setTitle("Custom Dialog");
-
-                TextView txt = (TextView) dialog.findViewById(R.id.alertTitle);
-                txt.setText("آیا از ارسال درخواست اطمینان دارید؟");
-
-                TextView txt1 = (TextView) dialog.findViewById(R.id.AlertMassage);
-                txt1.setText("کاربر گرامی در صورتی که برند خاصی از دارو که در نسخه شما وجود دارد را میخواهید حتما نام تجاری و شرکت سازنده محصول را در قسمت توضیحات قید نمایید تا دچار مشکل نشوید.");
-
-                Button dismissButton = (Button) dialog.findViewById(R.id.abb);
-                dismissButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Toast.makeText(getApplicationContext() ,"درخواست شما ارسال شد.", Toast.LENGTH_SHORT).show();
-
-                        dialog.dismiss();
-
-                    }
-                });
-
-                Button dismissButton1 = (Button) dialog.findViewById(R.id.abn);
-                dismissButton1.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Toast.makeText(getApplicationContext() ,"شما درخواستی ثبت نکردید.", Toast.LENGTH_SHORT).show();
-
-
-                        dialog.dismiss();
-                    }
-                });
-
-                dialog.show();
+            public void onClick(View v) {
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(intent,0);
             }
         });
+
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Bitmap bitmap = (Bitmap) data.getExtras().get("data");
+        imageView.setImageBitmap(bitmap);
+
+
+
+//        button = (Button) findViewById(R.id.btnn1);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                final Dialog dialog = new Dialog(NoskhDaram.this);
+//
+//                dialog.setContentView(R.layout.custom);
+//                dialog.getWindow().setLayout(1000,1300);
+//                dialog.setTitle("Custom Dialog");
+//
+//                TextView txt = (TextView) dialog.findViewById(R.id.alertTitle);
+//                txt.setText("آیا از ارسال درخواست اطمینان دارید؟");
+//
+//                TextView txt1 = (TextView) dialog.findViewById(R.id.AlertMassage);
+//                txt1.setText("کاربر گرامی در صورتی که برند خاصی از دارو که در نسخه شما وجود دارد را میخواهید حتما نام تجاری و شرکت سازنده محصول را در قسمت توضیحات قید نمایید تا دچار مشکل نشوید.");
+//
+//                Button dismissButton = (Button) dialog.findViewById(R.id.abb);
+//                dismissButton.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        Toast.makeText(getApplicationContext() ,"درخواست شما ارسال شد.", Toast.LENGTH_SHORT).show();
+//
+//                        dialog.dismiss();
+//
+//                    }
+//                });
+//
+//                Button dismissButton1 = (Button) dialog.findViewById(R.id.abn);
+//                dismissButton1.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        Toast.makeText(getApplicationContext() ,"شما درخواستی ثبت نکردید.", Toast.LENGTH_SHORT).show();
+//
+//
+//                        dialog.dismiss();
+//                    }
+//                });
+//
+//                dialog.show();
+//            }
+//        });
     }
 
 }
