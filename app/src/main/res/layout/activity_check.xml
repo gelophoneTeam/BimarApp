@@ -27,7 +27,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="داروخانه در حال بررسی می باشد."
-        android:textColor="#FF169F"
+        android:textColor="#fd169e"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

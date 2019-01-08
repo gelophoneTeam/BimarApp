@@ -86,7 +86,7 @@
             android:layout_gravity="bottom|center_horizontal"
             android:layout_marginBottom="10dp"
             android:text="30 دقیقه"
-            android:textColor="#ff169f"
+            android:textColor="#fd169e"
             android:textSize="20dp" />
 
     </com.github.florent37.shapeofview.shapes.RoundRectView>
@@ -127,7 +127,7 @@
             android:layout_gravity="bottom|center_horizontal"
             android:layout_marginBottom="10dp"
             android:text="#2482011"
-            android:textColor="#ff169f"
+            android:textColor="#fd169e"
             android:textSize="20dp" />
 
     </com.github.florent37.shapeofview.shapes.RoundRectView>
@@ -142,7 +142,7 @@
         android:layout_marginBottom="8dp"
         android:rotation="90"
         app:emptyColor="#dad8d8"
-        app:filledColor="#e40596"
+        app:filledColor="#fd169e"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
