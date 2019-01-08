@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.malizen.bimarapp">
-
+    //map
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    //photo
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -28,7 +33,8 @@
         <activity android:name=".Peyk" />
         <activity android:name=".NoskhDaram" />
         <activity android:name=".Wallet" />
-        <activity android:name=".CedarMap"></activity>
+        <activity android:name=".CedarMap" />
+        <activity android:name=".GalleryCamera"></activity>
     </application>
 
 </manifest>
