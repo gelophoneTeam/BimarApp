@@ -3,6 +3,15 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="search_in_places">Search in places</string>
+    <string name="location_is_needed_to_function">App needs location to function</string>
+    <string name="error_preparing_tiles">Error in preparing map tiles</string>
+    <string name="title_map">Map</string>
+    <string name="parse_error">Parsing Error</string>
+    <string name="province">استان</string>
+    <string name="comma">،</string>
+    <string name="title_reverse">Reverse</string>
+
     <string-array name="android_dropdown_arrays">
         <item>شهر/استان</item>
         <item>قزوین</item>

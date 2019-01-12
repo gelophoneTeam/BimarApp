@@ -16,6 +16,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
 }
 
 dependencies {
@@ -43,5 +47,9 @@ dependencies {
     //map
     implementation 'com.cedarmaps:CedarMapsSDK:3.2.0'
 
+
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-vector-drawable:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
 
 }

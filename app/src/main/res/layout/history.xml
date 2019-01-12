@@ -143,6 +143,7 @@
         android:rotation="90"
         app:emptyColor="#dad8d8"
         app:filledColor="#fd169e"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

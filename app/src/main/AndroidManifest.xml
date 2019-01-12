@@ -6,8 +6,10 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     //photo
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
@@ -34,7 +36,8 @@
         <activity android:name=".NoskhDaram" />
         <activity android:name=".Wallet" />
         <activity android:name=".CedarMap" />
-        <activity android:name=".GalleryCamera"></activity>
+        <activity android:name=".GalleryCamera" />
+        <activity android:name=".MainMap"></activity>
     </application>
 
 </manifest>
