@@ -33,7 +33,7 @@ public class MainMap extends AppCompatActivity implements BottomNavigationView.O
             public void onSuccess() {
                 BottomNavigationView navigation = findViewById(R.id.navigationView);
                 navigation.setOnNavigationItemSelectedListener(MainMap.this);
-                navigation.setSelectedItemId(R.id.navigation_map);
+                navigation.setSelectedItemId(R.id.navigation_forward);
             }
 
             @Override
@@ -47,10 +47,6 @@ public class MainMap extends AppCompatActivity implements BottomNavigationView.O
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         Fragment fragment = null;
         switch (item.getItemId()) {
-            case R.id.navigation_map:
-                setTitle(R.string.title_map);
-                fragment = new MapFragment();
-                break;
 
             case R.id.navigation_forward:
                 setTitle("");

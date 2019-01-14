@@ -17,10 +17,10 @@
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="57dp"
+        android:layout_height="67dp"
         android:layout_gravity="center"
-        mapbox:srcCompat="@drawable/ic_add_location_black_24dp"
+        mapbox:srcCompat="@drawable/ic_marker"
         tools:ignore="ContentDescription" />
     <LinearLayout
         android:id="@+id/search_results_linear_layout"
@@ -80,6 +80,7 @@
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="26sp"
+            android:background="#fff"
             android:visibility="gone"
             />
 

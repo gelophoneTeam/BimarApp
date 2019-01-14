@@ -35,7 +35,6 @@
         <activity android:name=".Peyk" />
         <activity android:name=".NoskhDaram" />
         <activity android:name=".Wallet" />
-        <activity android:name=".CedarMap" />
         <activity android:name=".GalleryCamera" />
         <activity android:name=".MainMap"></activity>
     </application>
