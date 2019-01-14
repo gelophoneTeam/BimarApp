@@ -7,4 +7,6 @@
     <string name="name">نام</string>
     <string name="sign">ثبت نام</string>
     <string name="factor">فاکتور</string>
+    <string name="text">لطفا چیزی بنویسید</string>
+    <string name="posh">پشتیبانی</string>
 </resources>
