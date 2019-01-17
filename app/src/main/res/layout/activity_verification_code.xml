@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".verificationCode">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/toolbar"
+        tools:ignore="MissingConstraints" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="40dp"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Verification Code"
+            android:textColor="#000"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="110dp"
+            android:text="Please type verification code"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="134dp"
+            android:layout_marginRight="50dp"
+            android:text="Sent to"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="130dp"
+            android:text="+user number"
+            android:textStyle="bold"
+            android:layout_marginLeft="38dp"
+            android:textSize="18dp" />
+
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/pinview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cursorVisible="false"
+            app:forceKeyboard="true"
+            app:hint="0"
+            app:pinBackground="@drawable/code_selector"
+            app:inputType="number"
+            android:layout_gravity="center"
+            app:password="false"
+            app:pinHeight="40dp"
+            app:pinLength="5"
+            app:pinWidth="40dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/btn_ver"
+            android:text="تایید"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
