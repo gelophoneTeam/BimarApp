@@ -30,38 +30,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Verification Code"
+            android:text="کد فعال سازی"
             android:textColor="#000"
             android:layout_marginTop="50dp"
             android:textSize="20sp"
+            android:id="@+id/very"
             android:textStyle="bold"/>
         <TextView
+            android:id="@+id/type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="right"
+            android:layout_marginRight="20sp"
             android:layout_marginTop="110dp"
-            android:text="Please type verification code"
+            android:text="لطفا کد ارسالی به شماره"
             android:textStyle="bold"
             android:textSize="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:layout_marginTop="134dp"
-            android:layout_marginRight="50dp"
-            android:text="Sent to"
-            android:textSize="14dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:id="@+id/sent"
+            android:text="شماره کاربر"
+            android:textSize="18dp"
             android:textStyle="bold" />
+
         <TextView
+            android:id="@+id/num"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="130dp"
-            android:text="+user number"
-            android:textStyle="bold"
-            android:layout_marginLeft="38dp"
-            android:textSize="18dp" />
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="160dp"
+            android:text="را وارد کنید"
+            android:textSize="16dp"
+            android:textStyle="bold" />
 
         <com.goodiebag.pinview.Pinview
             android:id="@+id/pinview"
